@@ -7,17 +7,41 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div>
-        <button onclick="play()">Play</button>
-    </div>
+    <diV class="screen">
+        <div>
+            <button id="playbutton" onclick="play()">Play</button>
+        </div>
+
+        <!-- Timer Display -->
+        <div id="timer">1:00</div>
+
         <div id="words">
             {% for i in range(0, words|length) %}
                 <span class="word">{{ words[i] }}</span>
             {% endfor %}
         </div>
-    <div>
-        <button onclick="skip()">skip</button>
-    </div>
-    <script src="{{url_for('static', filename='script.js')}}"></script>
+
+        <div>
+            <button class="button" id="skipBtn" onclick="skip()">Skip</button>
+        </div>
+        <div>
+            <button class="button" id="skipBtn" onclick="skip()">Next</button>
+        </div>
+        <div class="options">
+            <input type="checkbox" value="Animals">
+            <label for="Animals"> Animals</label><br>
+            <input type="checkbox" name="Easy-Geografy">
+            <label for="Easy-Geografy"> Easy-Geografy</label><br>
+            <input type="checkbox" name="Easy-science">
+            <label for="Easy-science"> Easy-Science</label><br>
+            <input type="checkbox" name="household">
+            <label for="household"> Household</label><br>
+            <input type="checkbox" name="Music/Instruments">
+            <label for="Music/Instruments"> Music/Instruments</label><br>
+            <input type="checkbox" name="Gaming">
+            <label for="Gaming"> Gaming</label><br>
+        </div>
+    </diV>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

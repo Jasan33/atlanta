@@ -1,3 +1,36 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
 #words {
+    font-size: 200%;
+    margin-bottom: 10px;
     display: none;
+}
+
+#timer {
+    margin: 10px;
+    display: block;
+}
+
+#playbutton {
+    width: 100px;
+    height: 30px;
+    margin-bottom: 15px;
+    margin: 10px;
+    display: block;
+}
+
+.screen {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    margin-bottom: 15px;
 }
