@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, session, url_for, flash
+from flask import Flask, render_template, jsonify
 import random
 
 app = Flask(
@@ -13,6 +13,12 @@ def home():
     return render_template('index.html', words=words) #return page
 
 
+@app.route("/random-word")
+def random_word():
+    word = random.choice(word_categories['word_list'])
+    return jsonify({'word': word})
+
+
 def select_words():
     # Select 45 words from category 'word_list'
     words = random.sample(word_categories['word_list'], 1)
@@ -22,12 +28,14 @@ def select_words():
 # A list of 200 commonly used words
 word_categories = {
     'word_list': [
-        "the", "develop", "of", "and", "a", "to", "in", "he", "have", "it", "that", "for", "they", "much", "with", "as", "not", "on", "she",
-        "at", "by", "this", "we", "you", "do", "but", "from", "or", "which", "one", "would", "all", "will", "there", "say", "who",
-        "make", "when", "can", "more", "if", "no", "man", "out", "other", "so", "what", "time", "up", "go", "about", "than", "into",
-        "could", "state", "only", "new", "year", "some", "take", "come", "these", "know", "see", "use", "get", "like", "then", "first",
-        "any", "work", "now", "may", "such", "give", "over", "think", "most", "even", "find", "day", "also", "after", "way", "many",
-        "must", "look", "before", "great", "back", "through", "long", "where", "much", "should", "well", "people", "down", "own", "just",
+        "Github", "developer", "phone", "electronic", "sky", "safe", "keyboard", "human", "New Delhi", "Oslo", "India", "Norway", 
+        "Javascript", "Paris", "philippines", "Manila", "robot", "chat-gpt", "Brazil", "2fa", "billiard", "Danmark", "Russia", 
+        "China", "Seoul", "Souht Korea", "North Korea", "white", "black", "Sykehusparter", "France", "Maiken", "Grefsenkållen", 
+        "tennis", "sand", "diamond", "gold", "United States of America", "Black gorilla", "Ai", "zero", "rope", "sex", "pistol", 
+        "solder", "fire", "water", "speak", "question", "task", "pilot", "girlfriend", "barcelona", "pasta", "pizza", "Burger Kind", 
+        "Macdonalds", "Kebab", "some", "computer", "flag", "Mumbai", "Hong Kong", "Mexico", "Argentina", "fidget spinner", "bear", 
+        "cat", "first", "dog", "Tiktok", "Instagram", "school", "Lunch", "Iceland", "over", "Basketball", "Friday", "Monday", "webnesday",
+        "sunday", "saturday", "help", "skip", "many", "must", "look", "before", "great", "back", "through", "long", "where", "much", "should", "well", "people", "down", "own", "just",
         "because", "good", "each", "those", "feel", "seem", "how", "high", "too", "place", "little", "world", "very", "still", "nation",
         "hand", "old", "life", "tell", "write", "become", "here", "show", "house", "both", "between", "need", "mean", "call", "develop",
         "under", "last", "right", "move", "thing", "general", "school", "never", "same", "another", "begin", "while", "number", "part",
