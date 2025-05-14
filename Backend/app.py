@@ -28,21 +28,22 @@ def select_words():
 # A list of 200 commonly used words
 word_categories = {
     'word_list': [
-        "Github", "developer", "phone", "electronic", "sky", "safe", "keyboard", "human", "New Delhi", "Oslo", "India", "Norway", 
+        "Github", "developer", "Phone", "Electronic", "Sky", "Safe", "Keyboard", "Human", "New Delhi", "Oslo", "India", "Norway", 
         "Javascript", "Paris", "philippines", "Manila", "robot", "chat-gpt", "Brazil", "2fa", "billiard", "Danmark", "Russia", 
         "China", "Seoul", "Souht Korea", "North Korea", "white", "black", "Sykehusparter", "France", "Maiken", "Grefsenkållen", 
-        "tennis", "sand", "diamond", "gold", "United States of America", "Black gorilla", "Ai", "zero", "rope", "sex", "pistol", 
-        "solder", "fire", "water", "speak", "question", "task", "pilot", "girlfriend", "barcelona", "pasta", "pizza", "Burger Kind", 
-        "Macdonalds", "Kebab", "some", "computer", "flag", "Mumbai", "Hong Kong", "Mexico", "Argentina", "fidget spinner", "bear", 
-        "cat", "first", "dog", "Tiktok", "Instagram", "school", "Lunch", "Iceland", "over", "Basketball", "Friday", "Monday", "webnesday",
-        "sunday", "saturday", "help", "skip", "many", "must", "look", "before", "great", "back", "through", "long", "where", "much", "should", "well", "people", "down", "own", "just",
-        "because", "good", "each", "those", "feel", "seem", "how", "high", "too", "place", "little", "world", "very", "still", "nation",
-        "hand", "old", "life", "tell", "write", "become", "here", "show", "house", "both", "between", "need", "mean", "call", "develop",
-        "under", "last", "right", "move", "thing", "general", "school", "never", "same", "another", "begin", "while", "number", "part",
-        "turn", "real", "leave", "might", "want", "point", "form", "off", "child", "few", "small", "since", "against", "ask", "late",
-        "home", "interest", "large", "person", "end", "open", "public", "follow", "during", "present", "without", "again", "hold",
-        "govern", "around", "possible", "head", "consider", "word", "program", "problem", "however", "lead", "system", "set", "order",
-        "eye", "plan", "run", "keep", "face", "fact", "group", "play", "stand", "increase", "early", "course", "change", "help", "line"
+        "Tennis", "Sand", "Diamond", "Gold", "USA", "Black gorilla", "Ai", "Zero", "Rope", "Sex", "Pistol", 
+        "Solder", "Fire", "Water", "Speak", "Question", "Task", "Pilot", "Girlfriend", "Barcelona", "Pasta", "Pizza", "Burger King", 
+        "Macdonalds", "Kebab", "Some", "Computer", "Flag", "Mumbai", "Hong Kong", "Mexico", "Argentina", "Fidget spinner", "Bear", 
+        "Cat", "First", "Dog", "Tiktok", "Instagram", "School", "Lunch", "Iceland", "Joy Kill", "Basketball", "Friday", "Monday", "wednesday",
+        "Sunday", "Saturday", "Help", "Skip", "Marry", "Church", "Look", "Before", "Spotify", "Laptop", "Fish", "Anal sex", "Whatsapp", 
+        "Teams", "Italiy", "Nose", "Eyes", "Legs", "Bathroom", "Note", "Evidence", "Book", "Google", "Image", "Slave", "Afrika", "Point", 
+        "High", "Alcohol", "Skin", "Phone", "Wires", "Mom", "Dad", "Database", "Bowling", "Cold", "Freeze", "Flashlight", "Ghost", "Fishing",
+        "Demon", "Rope", "House", "Thunder", "Toilet", "Mirror", "lazy", "Scam call", "Headsett", "Python", "Burger", "Smile", "Chair", 
+        "Geogusser", "Camera", "Dubai", "Torono", "Epost", "Highway", "Key", "Car", "Jam", "Tigretten", "Police", "Bank", "Radius", "Battery",
+        "GPU", "CPU", "RAM", "Enter", "Child", "Ocen", "OperaGX", "Bag", "BankID", "Vipps", "Moan", "Pen", "Papper", "Exam", "Cheating", "Rust", 
+        "Fingers", "Public", "Sink", "Football", "Chrome", "Poop", "Timer", "Presentation", "Video", "Pick", "Cock", "Head", "Airdrop", "Hotdog", 
+        "City", "Tbane", "Songsvann", "Kid", "Documention", "Table", "Bed", "Bottle", "Plan", "Run", "Jogging", "Gorilla", "Monkey", "Group", "UK",
+        "Explotion", "Word", "early", "Airpods", "Norwegian", "Photo", "Line"
     ]
 }
 
